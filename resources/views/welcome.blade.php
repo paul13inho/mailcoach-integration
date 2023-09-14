@@ -7,7 +7,7 @@
 </head>
 <body>
 
-<form action="">
+<form action="{{ route('email.store') }}" method="post">
     @csrf
     <label for="to">To:</label>
     <input type="text" name="to" id="to">
